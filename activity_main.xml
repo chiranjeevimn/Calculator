@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:weightSum="1"
+    tools:ignore="RtlCompat">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="0.07"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="CALUCLATOR"
+        android:textColorLink="?android:attr/editTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        tools:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/editOp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Enter First Num"
+        android:inputType="number|numberDecimal"
+        android:textSize="25sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editOp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="1dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Enter Second Num"
+        android:inputType="number|numberDecimal"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnsub"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.025"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btnmul"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.025"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/btndiv"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.025"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/btnclr"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.025"
+            android:text="Clear" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="RESULT"
+        android:textColorLink="?android:attr/editTextColor"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        tools:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:text="0.00"
+        android:textSize="25sp" />
+</LinearLayout>
